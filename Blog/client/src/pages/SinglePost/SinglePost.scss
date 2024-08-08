@@ -1,0 +1,94 @@
+.single {
+    flex-basis: 75%;
+    padding: 1rem 2.5rem;
+  
+    &__simg {
+      width: 50%;
+      margin: auto;
+    }
+  
+    &__simg1 {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 7px;
+  
+      // @media screen and (max-width: 480px) {
+      //     width: 120%;
+      // }
+    }
+  
+    &__titlebox {
+      text-align: center;
+      margin-top: 1rem; // Add space above the title box
+    }
+  
+    &__title {
+      font-size: 3rem;
+      opacity: 80%;
+  
+      @media screen and (max-width: 480px) {
+        font-size: 2.5rem; // Adjusted size for smaller screens
+      }
+    }
+  
+    &__date {
+      font-size: 1.3rem;
+      font-weight: bold;
+      width: 6.5rem;
+      background-color: #2D31FA; // Blue color
+      padding: 0.9rem;
+      border-radius: 7px;
+      color: #fff;
+      margin-bottom: 1rem; // Space below the date
+    }
+  
+    &__para {
+      max-width: 100%;
+      font-size: 1.7rem;
+      line-height: 1.5;
+      text-align: justify;
+      opacity: 80%;
+      border-top: 2px solid grey;
+      border-bottom: 2px solid grey;
+      padding: 1rem 0; // Add padding for better spacing
+  
+      @media screen and (max-width: 480px) {
+        font-size: 2.1rem;
+      }
+    }
+  
+    &__para::first-letter {
+      margin-left: 2rem;
+      font-size: 3rem;
+      font-weight: 600;
+      color: #2D31FA;
+    }
+  
+    &__button-group {
+      margin-top: 1rem; // Space above the buttons
+      display: flex;
+      justify-content: center; // Center buttons horizontally
+      gap: 1rem; // Space between buttons
+    }
+  
+    &__delete-button,
+    &__edit-button {
+      background-color: #2D31FA; // Base color for buttons
+      color: white;
+      border: none;
+      padding: 1rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 2rem;
+      transition: background-color 0.3s ease; // Smooth transition for hover effect
+      margin-bottom: 30px;
+    }
+  
+   
+  
+    &__delete-button:disabled {
+      background-color: #ccc; // Disabled color
+      cursor: not-allowed;
+    }
+  }
+  
